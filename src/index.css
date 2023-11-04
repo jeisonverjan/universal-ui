@@ -1,3 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+@layer components {
+  .color {
+    @apply flex-1 h-full w-full grid place-content-center transition-[.3s] duration-[ease-in-out] cursor-pointer hover:flex-[2]  text-transparent hover:text-white hover:shadow-[rgba(100,100,111,0.2)_0px_7px_29px_0px];
+  }
+
+  .color span {
+    @apply font-mono font-bold md:text-2xl lg:text-3xl;
+  }
+}
